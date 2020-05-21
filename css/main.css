@@ -1,4 +1,10 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body{
+    
     padding: 10px;
     background-color: rgb(56, 49, 59);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -7,14 +13,20 @@ body{
 
 .menu{
     margin: 10px;
-    
+    display:  flex;
 
 }
-.li menu{
-    display: inline;
+.menu li{
+    display: inline-flex;
+    list-style: none;
+    margin: 20px 40px;
   
 }
+.menu img{
+    margin-left: 15px;
+}
 header{
+    display: inline-flexbox;
     text-align: center;
     line-height: 50px;
     color: sandybrown;
@@ -25,21 +37,114 @@ header{
     
     
 }
-h1::after{
-    content: "";
-    background-image: url(assets\sports.svg)
+header h2, h1{
+    position: relative;
+    display: inline-flexbox;
+    box-sizing: border-box;
+    width: 90%;
+
+    
 }
+header h2>div{
+    position: absolute;
+    display: inline-flexbox;
+    right: 0;
+    bottom: -75px;
+}
+header img{
+    width: 35%;
+
+}
+
+
 .gallery{
     position: flex;
-    width: 30%;
-    margin 50px 0px;
+    display: inline-block;
+    
 
 }
 .gallery img{
-    display: block;
-    margin: 30px auto;
-    border: 5px solid black;
+    margin: 20px auto;
+    display: inline-flex;
+    width: 30vw;
+    border: 10px solid black;
+    
 }
-footer p{
-    letter-spacing: 10pxx;
+footer div{
+    position: flex;
+    width: 100vw;
+    
+height: 3vh;
+background-color: rgb(108, 105, 109);
+margin: 50px 0px 0px 0px;
+text-align: center;
+}
+footer span{
+    margin: 0px 5px;
+}
+.box{
+    display: flexbox;
+    position: flex;
+    box-sizing: border-box;
+    width: 50vw;
+    padding: 5px;
+    margin: 50px ;
+   
+}
+.box h3{
+    letter-spacing: 5px;
+    margin: 20px 10px 20px;
+    color: rgb(123, 184, 95);
+}
+
+.box li{
+    display: inline-block;
+    list-style: none;
+    margin:  20px auto;
+    
+    
+    }
+ .box li div {
+     display: flexbox;
+     position: relative;
+     box-sizing: border-box;
+     height: 20vh;
+     padding: .5vh; 
+     
+     
+     
+}
+.logo img{
+    display: inline-flexbox;
+    box-sizing: border-box;
+    height: 8vw;
+    position: absolute;
+    top: 0;
+    transition: .6s;
+    border-radius: 15px;
+    border: 2px solid rgb(217, 225, 240);
+    
+}
+
+.name {
+    position: absolute;
+    display: inherit;
+    top: 16vh;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: .6s; 
+}
+
+.logo img:hover{
+    transform: scale(.9);
+}
+
+ .logo div:hover {
+    transform: scale(1.1);
+    color: aquamarine; 
+ }
+
+.table{
+    min-width: 300px;
+    overflow: auto;
 }
