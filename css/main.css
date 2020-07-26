@@ -169,9 +169,66 @@ footer span{
 
 .video {
     display: block;
+    position: relative; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.contact {
+  position: relative;
+  top: 200px;
+  left: 60%;
+  font-size: 25px;
+  line-height: 30px;
+  color: black;
+
+}
+
+.support img{
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 8vw;
+  top: 10px;
+  height: 95px;
+  transition: .6s;
+  border-radius: 15px;
+  border: 2px solid rgb(217, 225, 240);
+}
+
+.support img:hover{
+  transform: scale(.9);
+}
+
+.achieve img{
+  margin-top: 10px;
+  margin-bottom: 0px;
+} 
+
+.achieve {
+  position: relative;
+  left: 60%;
+  bottom: 300px;
+  letter-spacing: 5px;
+  margin: 20px 10px 20px;
+  color: rgb(123, 184, 95);
+}
+
+@media (max-width:1270px){
+    .achieve{
+      position: relative;
+      left: 0px;
+      bottom: 0px;
+    }
 }
 
 @media (max-width: 800px){
+    .contact{
+      font-size: 20px;
+    }
     header{
         font-size: 12px;
         line-height: 38px;
@@ -184,6 +241,9 @@ footer span{
 }
 
 @media (max-width: 500px){
+    .contact{
+      font-size: 16px;
+   }
     header{
         font-size: 8px;
         line-height: 26px;
@@ -220,18 +280,15 @@ footer span{
     min-width: 250px;
   }
   
-  /* Include the padding and border in an element's total width and height */
   * {
     box-sizing: border-box;
   }
   
-  /* Remove margins and padding from the list */
   ul {
     margin: 0;
     padding: 0;
   }
   
-  /* Style the list items */
   ul li {
     cursor: pointer;
     position: relative;
@@ -241,31 +298,26 @@ footer span{
     font-size: 18px;
     transition: 0.2s;
     
-    /* make the list items unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
   }
   
-  /* Set all odd list items to a different color (zebra-stripes) */
   ul li:nth-child(odd) {
     background: #f9f9f9;
   }
   
-  /* Darker background-color on hover */
   ul li:hover {
     background: #ddd;
   }
   
-  /* When clicked on, add a background color and strike out text */
   ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
   }
   
-  /* Add a "checked" mark when clicked on */
   ul li.checked::before {
     content: '';
     position: absolute;
@@ -279,7 +331,6 @@ footer span{
     width: 7px;
   }
   
-  /* Style the close button */
   .close {
     position: absolute;
     right: 0;
@@ -292,7 +343,6 @@ footer span{
     color: white;
   }
   
-  /* Style the header */
   .header {
     background-color: crimson;
     padding: 30px 40px;
@@ -300,14 +350,12 @@ footer span{
     text-align: center;
   }
   
-  /* Clear floats after the header */
   .header:after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* Style the input */
   input {
     margin: 0;
     border: none;
@@ -318,7 +366,6 @@ footer span{
     font-size: 16px;
   }
   
-  /* Style the "Add" button */
   .addBtn {
     padding: 10px;
     width: 25%;
